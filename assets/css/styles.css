@@ -109,3 +109,13 @@ a:visited:hover {
     padding-top: 16px;
     padding-bottom: 16px;
 }
+
+@media screen (max-width: 1360px) {
+    h1, img {
+        display: flex;
+    }
+    
+    img {
+        order: 1;
+    }
+}
