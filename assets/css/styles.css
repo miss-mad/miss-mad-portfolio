@@ -1,0 +1,101 @@
+body {
+    background-color: lightsteelblue;
+    font-family: Verdana, Tahoma, sans-serif, sans-serif;
+}
+
+h1 {
+    font-family: 'Merienda', cursive, sans-serif;
+    text-align: right;
+    font-size: 65px;
+    margin-top: 50px;
+    position: fixed;
+    right: 18px;
+}
+
+img {
+    position: absolute;
+    top: 30px;
+    left: 195px;
+    /* box-shadow: 10px -20px 15px 5px rgba(219, 214, 214, 0.779);
+                                                                        make img edges blur */
+    /* backdrop-filter: blur(50px); */
+    opacity: 0.75;
+    border-radius: 9px;
+    /* background: linear-gradient(white, grey); */
+}
+
+section {
+    border: 3px solid lightcyan;
+    display: flex;
+}
+
+/* ul > a {
+    color: ;
+    font-size: 50px;
+}
+
+header ul {
+    width: 500px;
+} */
+                                                                         /*make menu bigger*/
+
+a[href*="https"]::after {
+    /* content: "<svg width="24px" height="24px" viewBox="0 0 24 24" style="cursor:pointer"><g stroke-width="2.1" stroke="#666" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 13.5 17 19.5 5 19.5 5 7.5 11 7.5"></polyline><path d="M14,4.5 L20,4.5 L20,10.5 M20,4.5 L11,13.5"></path></g></svg>"; */
+    /*open external link icon*/
+    /* content: icon("<svg width="24px" height="24px" viewBox="0 0 24 24" style="cursor:pointer"><g stroke-width="2.1" stroke="#666" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 13.5 17 19.5 5 19.5 5 7.5 11 7.5"></polyline><path d="M14,4.5 L20,4.5 L20,10.5 M20,4.5 L11,13.5"></path></g></svg>"); */
+    /* content: icon (<svg width="24px" height="24px" viewBox="0 0 24 24" style="cursor:pointer"><g stroke-width="2.1" stroke="#666" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 13.5 17 19.5 5 19.5 5 7.5 11 7.5"></polyline><path d="M14,4.5 L20,4.5 L20,10.5 M20,4.5 L11,13.5"></path></g></svg>); */
+    content: url("./css-images/launch_icon.png");
+}
+
+a:link {
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+a:hover {
+    text-decoration: none;
+    color: lightcyan;
+    font-size: 23.37px;
+}
+
+a:visited {
+    /* color: #7b0728; */
+    color: antiquewhite;
+}
+
+a:visited:hover {
+    color: lightcyan;
+}
+
+.resize {
+    width: 550px;
+    height: auto;
+}
+
+.navigation {
+    color: navy;
+                                                                          /*diff text color*/
+    /* width: 600px; */
+                                                                            /*make menu bigger*/
+    position: fixed;
+    top: 200px;
+    left: 45px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100px;
+    justify-content: center;
+                                                                        /*or make align right?*/
+    /* flex: 2; */
+                                                                        /*make menu items bigger*/
+    dis
+}
+
+.navigation:hover {
+    display: flex;
+}
+
+/* .main {
+    position: absolute;
+    display: flex;
+} */
