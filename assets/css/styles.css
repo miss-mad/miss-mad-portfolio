@@ -8,7 +8,7 @@ h1 {
     text-align: right;
     font-size: 65px;
     margin-top: 50px;
-    position: fixed;
+    /* position: fixed; */
     right: 18px;
 }
 
@@ -26,7 +26,18 @@ img {
 
 section {
     border: 3px solid lightcyan;
+    border-radius: 5px;
     display: flex;
+    position: relative;
+    top: 900px;
+    width: 50%;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+}
+
+.main-container {
+    max-width: 1536px;
 }
 
 /* ul > a {
@@ -44,7 +55,7 @@ a[href*="https"]::after {
     /*open external link icon*/
     /* content: icon("<svg width="24px" height="24px" viewBox="0 0 24 24" style="cursor:pointer"><g stroke-width="2.1" stroke="#666" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 13.5 17 19.5 5 19.5 5 7.5 11 7.5"></polyline><path d="M14,4.5 L20,4.5 L20,10.5 M20,4.5 L11,13.5"></path></g></svg>"); */
     /* content: icon (<svg width="24px" height="24px" viewBox="0 0 24 24" style="cursor:pointer"><g stroke-width="2.1" stroke="#666" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 13.5 17 19.5 5 19.5 5 7.5 11 7.5"></polyline><path d="M14,4.5 L20,4.5 L20,10.5 M20,4.5 L11,13.5"></path></g></svg>); */
-    content: url("./css-images/launch_icon.png");
+    /* content: url("./css-images/launch_icon.png"); */
 }
 
 a:link {
@@ -55,7 +66,7 @@ a:link {
 a:hover {
     text-decoration: none;
     color: lightcyan;
-    font-size: 23.37px;
+    font-size: 20.37px;
 }
 
 a:visited {
@@ -88,14 +99,13 @@ a:visited:hover {
                                                                         /*or make align right?*/
     /* flex: 2; */
                                                                         /*make menu items bigger*/
-    dis
 }
 
 .navigation:hover {
     display: flex;
 }
 
-/* .main {
-    position: absolute;
-    display: flex;
-} */
+.padding {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
