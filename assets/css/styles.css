@@ -5,50 +5,47 @@ body {
 
 h1 {
     font-family: 'Merienda', cursive, sans-serif;
-    text-align: right;
-    font-size: 65px;
-    margin-top: 50px;
+    text-align: center;
+    font-size: 35px;
+    margin: 25px 0;
     /* position: fixed; */
-    right: 18px;
+    /* right: 18px; */
 }
 
 img {
-    position: absolute;
+    /* position: absolute;
     top: 30px;
-    left: 195px;
+    left: 195px; */
     /* box-shadow: 10px -20px 15px 5px rgba(219, 214, 214, 0.779);
                                                                         make img edges blur */
     /* backdrop-filter: blur(50px); */
-    opacity: 0.75;
-    border-radius: 9px;
     /* background: linear-gradient(white, grey); */
+    opacity: 0.75;
+    border-radius: 25px;
 }
 
-section {
-    border: 3px solid lightcyan;
-    border-radius: 5px;
+section h3 {
+    padding-bottom: 20px;
+}
+
+button {
+    margin: 10px auto 50px auto;
+}
+
+.nav-img {
     display: flex;
-    position: relative;
-    top: 900px;
-    width: 50%;
-    /* justify-content: space-between; */
-    flex-wrap: wrap;
-    /* flex-direction: row; */
 }
 
-.main-container {
+
+.resize {
+    width: 220px;
+    height: auto;
+}
+
+/* .main-container {
     max-width: 1536px;
-}
-
-/* ul > a {
-    color: ;
-    font-size: 50px;
-}
-
-header ul {
-    width: 500px;
+    display: flex;
 } */
-                                                                         /*make menu bigger*/
 
 a[href*="https"]::after {
     /* content: "<svg width="24px" height="24px" viewBox="0 0 24 24" style="cursor:pointer"><g stroke-width="2.1" stroke="#666" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 13.5 17 19.5 5 19.5 5 7.5 11 7.5"></polyline><path d="M14,4.5 L20,4.5 L20,10.5 M20,4.5 L11,13.5"></path></g></svg>"; */
@@ -78,12 +75,91 @@ a:visited:hover {
     color: lightcyan;
 }
 
-.resize {
-    width: 550px;
-    height: auto;
+.navigation {
+    color: navy;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto 5px auto 8px;
+    /* order: -1; */
 }
 
-.navigation {
+.navigation:hover {
+    display: flex;
+}
+
+.nav-padding {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+#brand-statement {
+    margin-top: 30px;
+    height: 200px;
+    text-align: center;
+}
+
+#why-me,
+#projects,
+#say-hello {
+    /* border: 2px solid antiquewhite;
+    border-radius: 5px; */
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px auto;
+    height: 200px;
+    padding-bottom: 10px;
+    justify-content: center;
+}
+
+/* #say-hello {
+    justify-content: space-around;
+} */
+
+.form-row {
+    justify-content: space-evenly;
+    height: 60px;
+}
+
+.message {
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.contact-link p {
+    padding: 12px;
+    color: antiquewhite;
+}
+
+@media screen (max-width: 1360px) {
+    h1, img {
+        display: flex;
+    }
+    
+    img {
+        order: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.navigation {
     color: navy;
                                                                           /*diff text color*/
     /* width: 600px; */
@@ -99,23 +175,4 @@ a:visited:hover {
                                                                         /*or make align right?*/
     /* flex: 2; */
                                                                         /*make menu items bigger*/
-}
-
-.navigation:hover {
-    display: flex;
-}
-
-.padding {
-    padding-top: 16px;
-    padding-bottom: 16px;
-}
-
-@media screen (max-width: 1360px) {
-    h1, img {
-        display: flex;
-    }
-    
-    img {
-        order: 1;
-    }
 }
