@@ -1,178 +1,203 @@
 body {
-    background-color: lightsteelblue;
-    font-family: Verdana, Tahoma, sans-serif, sans-serif;
+  background-color: lightsteelblue;
+  font-family: Verdana, Tahoma, sans-serif, sans-serif;
+  height: 100%;
+  margin: 0;
 }
 
 h1 {
-    font-family: 'Merienda', cursive, sans-serif;
+  font-family: "Merienda", cursive, sans-serif;
+  text-align: center;
+  font-size: 35px;
+  margin: 25px 0 8px 0;
+}
+
+h3 {
     text-align: center;
-    font-size: 35px;
-    margin: 25px 0;
-    /* position: fixed; */
-    /* right: 18px; */
 }
 
 img {
-    /* position: absolute;
-    top: 30px;
-    left: 195px; */
-    /* box-shadow: 10px -20px 15px 5px rgba(219, 214, 214, 0.779);
-                                                                        make img edges blur */
-    /* backdrop-filter: blur(50px); */
-    /* background: linear-gradient(white, grey); */
-    opacity: 0.75;
-    border-radius: 25px;
+  opacity: 0.75;
+  border-radius: 25px;
 }
 
 section h3 {
-    padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 button {
-    margin: 10px auto 50px auto;
+  margin: 10px auto 50px auto;
+}
+
+figure {
+    display: flex;
+    justify-content: center;
+}
+
+hr {
+    margin: 0 8px 0 8px;
+}
+
+.projects > div {
+    color: white;
+    font-size: 24px;
 }
 
 .nav-img {
-    display: flex;
+  display: flex;
 }
-
 
 .resize {
-    width: 220px;
-    height: auto;
-}
-
-/* .main-container {
-    max-width: 1536px;
-    display: flex;
-} */
-
-a[href*="https"]::after {
-    /* content: "<svg width="24px" height="24px" viewBox="0 0 24 24" style="cursor:pointer"><g stroke-width="2.1" stroke="#666" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 13.5 17 19.5 5 19.5 5 7.5 11 7.5"></polyline><path d="M14,4.5 L20,4.5 L20,10.5 M20,4.5 L11,13.5"></path></g></svg>"; */
-    /*open external link icon*/
-    /* content: icon("<svg width="24px" height="24px" viewBox="0 0 24 24" style="cursor:pointer"><g stroke-width="2.1" stroke="#666" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 13.5 17 19.5 5 19.5 5 7.5 11 7.5"></polyline><path d="M14,4.5 L20,4.5 L20,10.5 M20,4.5 L11,13.5"></path></g></svg>"); */
-    /* content: icon (<svg width="24px" height="24px" viewBox="0 0 24 24" style="cursor:pointer"><g stroke-width="2.1" stroke="#666" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 13.5 17 19.5 5 19.5 5 7.5 11 7.5"></polyline><path d="M14,4.5 L20,4.5 L20,10.5 M20,4.5 L11,13.5"></path></g></svg>); */
-    /* content: url("./css-images/launch_icon.png"); */
+  width: 220px;
+  height: auto;
 }
 
 a:link {
-    text-decoration: none;
-    color: antiquewhite;
+  text-decoration: none;
+  color: antiquewhite;
 }
 
 a:hover {
-    text-decoration: none;
-    color: lightcyan;
-    font-size: 20.37px;
+  text-decoration: none;
+  color: lightcyan;
+  font-size: 20.37px;
 }
 
 a:visited {
-    /* color: #7b0728; */
-    color: antiquewhite;
+  color: antiquewhite;
 }
 
 a:visited:hover {
-    color: lightcyan;
+  color: lightcyan;
 }
 
 .navigation {
-    color: navy;
-    font-size: 14px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: auto 5px auto 8px;
-    /* order: -1; */
+  color: navy;
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto 5px auto 8px;
 }
 
 .navigation:hover {
-    display: flex;
+  display: flex;
 }
 
 .nav-padding {
-    padding-top: 16px;
-    padding-bottom: 16px;
+  padding: 16px;
 }
 
 #brand-statement {
-    margin-top: 30px;
-    height: 200px;
-    text-align: center;
+  margin-top: 30px;
+  height: 200px;
+  text-align: center;
 }
 
 #why-me,
-#projects,
 #say-hello {
-    /* border: 2px solid antiquewhite;
-    border-radius: 5px; */
     display: flex;
-    flex-wrap: wrap;
-    margin: 10px auto;
-    height: 200px;
-    padding-bottom: 10px;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px 0 16px 0;
 }
 
-/* #say-hello {
-    justify-content: space-around;
-} */
-
 .form-row {
-    justify-content: space-evenly;
-    height: 60px;
+  justify-content: space-evenly;
+  height: 60px;
 }
 
 .message {
-    flex-wrap: wrap;
-    width: 100%;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .contact-link p {
-    padding: 12px;
-    color: antiquewhite;
+  padding: 12px;
+  color: antiquewhite;
 }
 
-@media screen (max-width: 1360px) {
-    h1, img {
-        display: flex;
-    }
-    
-    img {
-        order: 1;
-    }
+.name {
+    padding: 8px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*.navigation {
-    color: navy;
-                                                                          /*diff text color*/
-    /* width: 600px; */
-                                                                            /*make menu bigger*/
-    position: fixed;
-    top: 200px;
-    left: 45px;
+.main-container {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100px;
     justify-content: center;
-                                                                        /*or make align right?*/
-    /* flex: 2; */
-                                                                        /*make menu items bigger*/
+    min-height: 100%;
+    margin-bottom: -50px;
+}
+
+.content {
+    width: 80%;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.footer,
+.push {
+  height: 400px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.project-title-1 {
+    background: url(../images/benjamin-voros-phIFdC6lA4E-unsplash.jpg);
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-title-2 {
+    background: url(../images/manki-kim-L82-kkEBOd0-unsplash.jpg);
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-title-3 {
+    background: url(../images/paul-vincent-roll-c61jL_NpAn8-unsplash.jpg);
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-title-2,
+.project-title-3 {
+    /* width: 50%;     */
+}
+
+.row-1 {
+    width: 100%;
+    padding: 8px;
+}
+
+.row-2 {
+    width: 100%;
+    padding: 8px;
+    display: flex;
+    justify-content: space-evenly;
 }
