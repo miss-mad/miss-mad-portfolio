@@ -29,6 +29,10 @@ section > h2 {
   padding: 0 0 8px 0;
 }
 
+section > h3 {
+  padding: 0 0 8px 0;
+}
+
 section > p {
   padding-top: 16px;
 }
@@ -238,6 +242,7 @@ button {
 @media screen and (max-width: 375px) {
   .project-title-1 {
     height: 300px;
+    text-align: center;
   }
 
   .project-title-2,
