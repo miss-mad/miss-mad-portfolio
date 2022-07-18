@@ -63,14 +63,13 @@
         </figure>
 
         <section>
-          <div class="main">
+          <div>
             <section id="brand-statement">
               <h2>Brand statement/Elevator pitch here</h2>
-              <hr />
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
             </section>
             <section id="why-me">
               <h3>Who am I and why do I code?</h3>
-              <hr />
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Perferendis cum quos vero quas amet magni rem magnam minima qui
@@ -78,27 +77,44 @@
                 animi eum expedita consectetur.
               </p>
             </section>
-            <section class="projects">
-              <h3>Projects</h3>
-              <hr />
+            <section id="projects" class="projects">
+              <h2>Projects</h2>
               <div class="row-1">
-                <div class="card first">
-                  <div class="project-title-1">Title</div>
+                <div class="card">
+                  <div class="project-title-1">
+                    <a
+                      href="https://miss-mad.github.io/unconventional-survey/"
+                      target="_blank"
+                      >Unconventional Survey</a
+                    >
+                  </div>
                 </div>
               </div>
               <div class="row-2">
                 <div class="card">
-                  <div class="project-title-2">Title</div>
+                  <div class="project-title-2">
+                    <a
+                      href="https://miss-mad.github.io/css-snippet-cheatsheet/"
+                      target="_blank"
+                      >CSS Cheatsheet</a
+                    >
+                  </div>
                 </div>
                 <div class="card">
-                  <div class="project-title-3">Title</div>
+                  <div class="project-title-3">
+                    <a
+                      href="https://miss-mad.github.io/tribute-page/"
+                      target="_blank"
+                      >Tribute Page</a
+                    >
+                  </div>
                 </div>
               </div>
             </section>
             <section id="say-hello">
               <h3>Get in touch:</h3>
 
-              <form action="" method="GET" class="contact-form">
+              <form action="" method="GET">
                 <div class="form-row">
                   <label for="full-name">Name</label>
                   <input id="full-name" name="full-name" type="text" />
@@ -117,10 +133,13 @@
                   <textarea id="message" name="message"></textarea>
                 </div>
                 <button type="submit">Send!</button>
+                <input type="reset" name="reset" value="Clear Form" />
               </form>
 
               <div class="contact-link">
-                <p>Email: mmlh.harris@gmail.com</p>
+                <p>
+                  <a href="mailto:mmlh.harris@gmail.com">Email</a>
+                </p>
                 <p>
                   <a href="https://github.com/miss-mad" target="_blank"
                     >GitHub</a
@@ -143,7 +162,10 @@
     </main>
 
     <footer class="footer">
-      <h1>THE FOOTER</h1>
+      <h4>
+        Made with <span aria-label="heart" role="img">💜</span> by Madeleine
+        Harris
+      </h4>
     </footer>
   </body>
 </html>

@@ -1,3 +1,10 @@
+/*CSS Variables*/
+:root {
+    --white: antiquewhite;
+    --blue: lightcyan;
+}
+
+/*Element selectors*/
 body {
   background-color: lightsteelblue;
   font-family: Verdana, Tahoma, sans-serif, sans-serif;
@@ -5,15 +12,12 @@ body {
   margin: 0;
 }
 
-h1 {
+h1,
+h4 {
   font-family: "Merienda", cursive, sans-serif;
   text-align: center;
   font-size: 35px;
   margin: 25px 0 8px 0;
-}
-
-h3 {
-    text-align: center;
 }
 
 img {
@@ -21,54 +25,70 @@ img {
   border-radius: 25px;
 }
 
-section h3 {
-  padding-bottom: 20px;
+section > h2 {
+  padding: 0 0 8px 0;
+}
+
+section > p {
+  padding-top: 16px;
+}
+
+section > h2,
+section > h3,
+section > p {
+  text-align: center;
+}
+
+figure {
+  display: flex;
+  justify-content: center;
+  margin: 8px 0 24px 0;
+}
+
+a:link {
+  text-decoration: none;
+  color: var(--white);
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--blue);
+  font-size: 20.37px;
+}
+
+a:visited {
+  color: var(--white);
+}
+
+a:visited:hover {
+  color: var(--blue);
+}
+
+a[href*="miss-mad."] {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
 }
 
 button {
   margin: 10px auto 50px auto;
 }
 
-figure {
-    display: flex;
-    justify-content: center;
+/*Class selectors*/
+.name {
+  padding: 8px;
 }
 
-hr {
-    margin: 0 8px 0 8px;
-}
-
-.projects > div {
-    color: white;
-    font-size: 24px;
-}
-
-.nav-img {
+.main-container {
   display: flex;
+  justify-content: center;
+  min-height: 100%;
+  margin-bottom: -50px;
 }
 
-.resize {
-  width: 220px;
-  height: auto;
-}
-
-a:link {
-  text-decoration: none;
-  color: antiquewhite;
-}
-
-a:hover {
-  text-decoration: none;
-  color: lightcyan;
-  font-size: 20.37px;
-}
-
-a:visited {
-  color: antiquewhite;
-}
-
-a:visited:hover {
-  color: lightcyan;
+.content {
+  width: 80%;
+  border-radius: 5px;
 }
 
 .navigation {
@@ -79,6 +99,8 @@ a:visited:hover {
   flex-wrap: wrap;
   justify-content: center;
   margin: auto 5px auto 8px;
+  background-color: rgba(63, 70, 122, 0.5);
+  border-radius: 5px;
 }
 
 .navigation:hover {
@@ -89,19 +111,62 @@ a:visited:hover {
   padding: 16px;
 }
 
-#brand-statement {
-  margin-top: 30px;
-  height: 200px;
-  text-align: center;
+.resize {
+  width: 220px;
+  height: auto;
 }
 
-#why-me,
-#say-hello {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    padding: 16px 0 16px 0;
+.projects {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.row-1 {
+  width: 100%;
+  margin: 0 0 8px 0;
+}
+
+.card:hover {
+  filter: brightness(0.75);
+}
+
+.project-title-1 {
+  background: url(../images/benjamin-voros-phIFdC6lA4E-unsplash.jpg);
+  height: 400px;
+}
+
+.row-2 {
+  width: 100%;
+  margin: 8px 0 0 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.project-title-2 {
+  background: url(../images/manki-kim-L82-kkEBOd0-unsplash.jpg);
+}
+
+.project-title-3 {
+  background: url(../images/paul-vincent-roll-c61jL_NpAn8-unsplash.jpg);
+}
+
+.project-title-2,
+.project-title-3 {
+  width: 300px;
+  height: 300px;
+}
+
+.project-title-1,
+.project-title-2,
+.project-title-3 {
+  border-radius: 3px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
 }
 
 .form-row {
@@ -114,90 +179,69 @@ a:visited:hover {
   width: 100%;
 }
 
-.contact-link p {
+.contact-link > p {
   padding: 12px;
-  color: antiquewhite;
+  color: var(--white);
 }
 
-.name {
-    padding: 8px;
-}
-
-.main-container {
-    display: flex;
-    justify-content: center;
-    min-height: 100%;
-    margin-bottom: -50px;
-}
-
-.content {
-    width: 80%;
-    border: 1px solid black;
-    border-radius: 5px;
-}
-
-.footer,
-.push {
-  height: 400px;
+.push,
+.footer {
+  height: 200px;
 }
 
 .footer {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 
-.projects {
-    display: flex;
-    justify-content: center;
+/*ID selectors*/
+#brand-statement,
+#why-me {
+  height: 200px;
+}
+
+#why-me {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 0 16px 0;
+}
+
+#say-hello {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px 0 16px 0;
+}
+
+/*Media queries for screen sizes smaller than 769px and 375px, respectively*/
+@media screen and (max-width: 769px) {
+  .row-2 {
     flex-direction: column;
-}
+  }
 
-.project-title-1 {
-    background: url(../images/benjamin-voros-phIFdC6lA4E-unsplash.jpg);
-    height: 400px;
-    background-size: cover;
-    background-position: center;
+  .card {
     display: flex;
     justify-content: center;
-    align-items: center;
-}
+  }
 
-.project-title-2 {
-    background: url(../images/manki-kim-L82-kkEBOd0-unsplash.jpg);
-    width: 200px;
-    height: 200px;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.project-title-3 {
-    background: url(../images/paul-vincent-roll-c61jL_NpAn8-unsplash.jpg);
-    width: 200px;
-    height: 200px;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.project-title-2,
-.project-title-3 {
-    /* width: 50%;     */
-}
-
-.row-1 {
+  .project-title-1 {
     width: 100%;
-    padding: 8px;
+  }
+
+  .project-title-2 {
+    margin-bottom: 16px;
+  }
 }
 
-.row-2 {
-    width: 100%;
-    padding: 8px;
-    display: flex;
-    justify-content: space-evenly;
+@media screen and (max-width: 375px) {
+  .project-title-1 {
+    height: 300px;
+  }
+
+  .project-title-2,
+  .project-title-3 {
+    height: 200px;
+  }
 }
